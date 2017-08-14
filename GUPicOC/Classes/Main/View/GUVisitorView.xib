@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="GUVisitorView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visitordiscover_image_message" translatesAutoresizingMaskIntoConstraints="NO" id="XS6-Zj-BN4" userLabel="image">
+                    <rect key="frame" x="100" y="198" width="175" height="175"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5i1-wP-Ns0">
+                    <rect key="frame" x="77" y="378" width="220" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyo-hd-xrC">
+                    <rect key="frame" x="87" y="429" width="200" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="cS6-nP-h4T"/>
+                        <constraint firstAttribute="height" constant="50" id="cpm-D9-dPs"/>
+                    </constraints>
+                    <state key="normal" title="立即注册登录" backgroundImage="common_button_white_disable">
+                        <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5i1-wP-Ns0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PQa-vy-9Vc"/>
+                <constraint firstItem="5i1-wP-Ns0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="77" id="Rlo-Sg-PXh"/>
+                <constraint firstItem="Cyo-hd-xrC" firstAttribute="top" secondItem="5i1-wP-Ns0" secondAttribute="bottom" constant="30" id="VPI-48-slO"/>
+                <constraint firstItem="Cyo-hd-xrC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="etC-94-aFI"/>
+                <constraint firstItem="XS6-Zj-BN4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="198" id="oDf-6c-JlS"/>
+                <constraint firstItem="5i1-wP-Ns0" firstAttribute="centerX" secondItem="XS6-Zj-BN4" secondAttribute="centerX" id="vBv-oQ-mzl"/>
+                <constraint firstItem="5i1-wP-Ns0" firstAttribute="top" secondItem="XS6-Zj-BN4" secondAttribute="bottom" constant="5" id="vbk-Y1-jE3"/>
+            </constraints>
+            <connections>
+                <outlet property="registerButton" destination="Cyo-hd-xrC" id="mFn-aR-yQq"/>
+                <outlet property="vcDescLabel" destination="5i1-wP-Ns0" id="pas-uJ-kAI"/>
+                <outlet property="vcImageView" destination="XS6-Zj-BN4" id="2Rn-0K-cpf"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_button_white_disable" width="11" height="35"/>
+        <image name="visitordiscover_image_message" width="175" height="175"/>
+    </resources>
+</document>

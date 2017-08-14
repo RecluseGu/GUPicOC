@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="GUFollowCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xUY-wH-ITd">
+                        <rect key="frame" x="10" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="hLf-W8-qO2"/>
+                            <constraint firstAttribute="height" constant="60" id="rYt-ad-SUE"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hi1-sd-cUz">
+                        <rect key="frame" x="80" y="10" width="150" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="2lq-Iq-gZ5"/>
+                        </constraints>
+                        <state key="normal" title="Cathy">
+                            <color key="titleColor" red="0.31601607799999998" green="0.31628179550000002" blue="0.31605726480000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一个人一座城！" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wig-HT-dwl">
+                        <rect key="frame" x="80" y="41" width="150" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeZ-we-RqN">
+                        <rect key="frame" x="252" y="30" width="50" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="p0A-G6-JWT"/>
+                            <constraint firstAttribute="height" constant="25" id="xrJ-mz-7ch"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="相互关注">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="folllowBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="rCK-Md-6bP"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Wig-HT-dwl" firstAttribute="trailing" secondItem="hi1-sd-cUz" secondAttribute="trailing" id="7Bh-jl-9jS"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="eeZ-we-RqN" secondAttribute="trailing" constant="10" id="CNK-Rp-oCf"/>
+                    <constraint firstItem="hi1-sd-cUz" firstAttribute="leading" secondItem="xUY-wH-ITd" secondAttribute="trailing" constant="10" id="GU6-EN-dCT"/>
+                    <constraint firstItem="xUY-wH-ITd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Qgy-y0-DhS"/>
+                    <constraint firstItem="hi1-sd-cUz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="TAF-q8-N2v"/>
+                    <constraint firstItem="Wig-HT-dwl" firstAttribute="bottom" secondItem="xUY-wH-ITd" secondAttribute="bottom" id="Uis-Fi-Tcl"/>
+                    <constraint firstItem="xUY-wH-ITd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="WG1-MV-4he"/>
+                    <constraint firstItem="Wig-HT-dwl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="33" id="Zr0-HU-HXP"/>
+                    <constraint firstItem="Wig-HT-dwl" firstAttribute="leading" secondItem="hi1-sd-cUz" secondAttribute="leading" id="joO-9R-dbC"/>
+                    <constraint firstItem="eeZ-we-RqN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="2.5" id="mky-C6-dwY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="followBtn" destination="eeZ-we-RqN" id="60R-BR-deU"/>
+                <outlet property="headImage" destination="xUY-wH-ITd" id="680-az-BLL"/>
+                <outlet property="mottoLabel" destination="Wig-HT-dwl" id="MSh-Qb-rsN"/>
+                <outlet property="userNameBtn" destination="hi1-sd-cUz" id="kIH-8O-YxZ"/>
+            </connections>
+            <point key="canvasLocation" x="68" y="99"/>
+        </tableViewCell>
+    </objects>
+</document>
